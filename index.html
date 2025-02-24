@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Load Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* Background image settings */
+            background-image: url('Images/bg.jpg');
+            background-size: auto;
+            background-repeat: repeat;
+            background-color: #7DADC4; /* Fallback color */
+            font-family: 'Open Sans', sans-serif; /* Body text font */
+        }
+
+        /* Blue Hue Overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(125, 173, 196, 0.5); /* Semi-transparent blue overlay */
+            z-index: -1; /* Place it behind the content */
+        }
+
+        .top-footer {
+            background-color: black;
+            padding: 10px 20px; /* Reduced padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            height: 30px; /* Smaller height */
+            transition: top 0.3s; /* Smooth transition for hiding/showing */
+        }
+
+        /* Hide header on scroll down */
+        .top-footer.hide {
+            top: -50px; /* Move header out of view */
+        }
+
+        /* Fading Arch Effect */
+        .top-footer::after {
+            content: '';
+            position: absolute;
+            bottom: -100px; /* Extend below the footer */
+            left: 0;
+            right: 0;
+            height: 100px; /* Height of the arch */
+            background: radial-gradient(
+                ellipse 65% 90% at 50% 100%, /* Ellipse shape, wider at the top */
+                rgba(0, 0, 0, 0) 80%, /* Transparent at the center */
+                rgba(0, 0, 0, 1) 100% /* Solid black on the sides */
+            );
+            z-index: -1; /* Place it behind the footer content */
+        }
+
+        .social-links {
+            display: flex;
+            gap: 55px; /* Space between icons */
+            margin-left: 140px;
+            align-items: center; /* Center icons vertically */
+        }
+
+        .social-links img {
+            height: 25px; /* Smaller icons */
+            width: auto; /* Maintain aspect ratio */
+            transition: transform 0.3s ease; /* Smooth hover effect */
+        }
+
+        .social-links img:hover {
+            transform: scale(1.2); /* Slightly enlarge on hover */
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 50px;
+            margin-right: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif; /* Heading font */
+            font-size: 16px; /* Smaller font size */
+        }
+
+        .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 80px; /* Smaller size */
+            height: 50px; /* Smaller height */
+            z-index: 1;
+        }
+
+        main {
+            margin-top: 80px; /* Adjusted for smaller header */
+            padding: 20px;
+            position: relative;
+            flex: 1; /* Push footer to the bottom */
+        }
+
+        a:hover {
+            color: #ECC934;
+            transition: color 0.3s ease;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 1200px; /* 50% wider */
+            margin: 20px auto; /* Center the container */
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            border: 2px solid #ECC934; /* Gold border */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        /* Center only the "Welcome to Intuitive Trader" text */
+        .welcome-container h1 {
+            text-align: center; /* Center the heading */
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif; /* Heading font */
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif; /* Body text font */
+            line-height: 1.6; /* Improve readability */
+        }
+
+        /* Footer Styles */
+        .bottom-footer {
+            background-color: black;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            height: 30px;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+
+        /* Inverted Arch Effect */
+        .bottom-footer::before {
+            content: '';
+            position: absolute;
+            top: -100px; /* Extend above the footer */
+            left: 0;
+            right: 0;
+            height: 100px; /* Height of the arch */
+            background: radial-gradient(
+                ellipse 65% 90% at 50% 0%, /* Ellipse shape, wider at the bottom */
+                rgba(0, 0, 0, 0) 80%, /* Transparent at the center */
+                rgba(0, 0, 0, 1) 100% /* Solid black on the sides */
+            );
+            z-index: -1; /* Place it behind the footer content */
+        }
+    </style>
+</head>
+<body>
+    <footer class="top-footer">
+        <div class="social-links">
+            <a href="#"><img src="Images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="Images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="Images/instagram.png" alt="Instagram"></a>
+        </div>
+        
+        <a href="index.html" class="logo"><img src="Images/ITLogo.png" alt="Logo" class="logo"></a>
+        
+        <div class="nav-links">
+            <a href="about.html">About Us</a>
+            <a href="probabilities.html">Probabilities</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+
+    <main>
+        <!-- Welcome Container -->
+        <div class="container welcome-container">
+            <h1>Welcome to Intuitive Trader</h1>
+            <p>
+                At Intuitive Trader, we leverage cutting-edge artificial intelligence to make intelligent trades on behalf of our clients. 
+                Our advanced algorithms analyze market trends, identify opportunities, and execute trades with precision, ensuring you 
+                benefit from the best possible outcomes.
+            </p>
+            <h2>How It Works</h2>
+            <p>
+                Our AI-driven platform monitors global markets 24/7, identifying profitable trading opportunities in real-time. 
+                Once a trade is executed by our system, it is automatically copied to your account, allowing you to replicate 
+                the success of our AI without any manual effort.
+            </p>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li><strong>AI-Powered Trading:</strong> Harness the power of artificial intelligence to make smarter trades.</li>
+                <li><strong>Seamless Copy Trading:</strong> Automatically copy trades executed by our AI system.</li>
+                <li><strong>24/7 Market Monitoring:</strong> Never miss an opportunity with round-the-clock market analysis.</li>
+                <li><strong>Transparent and Secure:</strong> We prioritize your security and provide full transparency in all transactions.</li>
+            </ul>
+            <h2>Get Started Today</h2>
+            <p>
+                Join Intuitive Trader and take your trading to the next level. Sign up now to start copying trades from our AI system 
+                and experience the future of trading.
+            </p>
+        </div>
+
+        <!-- Third Container: How Normal Copy Traders Function -->
+        <div class="container">
+            <h2>How Normal Copy Traders Function Today</h2>
+            <p>
+                Traditional copy trading platforms rely on human traders to make decisions. Here’s how they typically work:
+            </p>
+            <h3>1. Manual Selection of Traders</h3>
+            <p>
+                Users manually select traders to copy based on their past performance, risk appetite, and trading style. This process 
+                can be time-consuming and often relies on incomplete or outdated information.
+            </p>
+            <h3>2. Delayed Execution</h3>
+            <p>
+                Once a trader is selected, there is often a delay between the trader’s actions and the copying of trades. This delay 
+                can result in missed opportunities or less favorable entry/exit points.
+            </p>
+            <h3>3. Limited Transparency</h3>
+            <p>
+                Traditional copy trading platforms often lack transparency in how trades are executed. Users may not fully understand 
+                the strategies being used or the risks involved.
+            </p>
+            <h3>4. Emotional Bias</h3>
+            <p>
+                Human traders are prone to emotional decision-making, which can lead to inconsistent performance and increased risk.
+            </p>
+            <p>
+                At Intuitive Trader, we eliminate these limitations by using AI to make data-driven decisions, ensuring faster execution, 
+                greater transparency, and consistent performance.
+            </p>
+        </div>
+
+        <!-- Second Container: Services -->
+        <div class="container">
+            <h2>Our Services</h2>
+            <p>
+                We offer a range of services designed to help you succeed in the financial markets. From AI-driven trading strategies 
+                to personalized portfolio management, we’ve got you covered.
+            </p>
+            <h3>AI Trading</h3>
+            <p>
+                Our AI algorithms analyze market data in real-time, identifying profitable opportunities and executing trades on your behalf.
+            </p>
+            <h3>Copy Trading</h3>
+            <p>
+                Automatically replicate the trades made by our AI system, ensuring you never miss a profitable opportunity.
+            </p>
+            <h3>24/7 Support</h3>
+            <p>
+                Our team is available around the clock to assist you with any questions or concerns.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bottom-footer">
+        <div class="social-links">
+            <a href="#"><img src="Images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="Images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="Images/instagram.png" alt="Instagram"></a>
+        </div>
+        
+        <div class="nav-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript to hide/show header on scroll
+        let lastScroll = 0;
+        const header = document.querySelector('.top-footer');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > lastScroll) {
+                // Scroll down: hide header
+                header.classList.add('hide');
+            } else {
+                // Scroll up: show header
+                header.classList.remove('hide');
+            }
+
+            lastScroll = currentScroll;
+        });
+    </script>
+</body>
+</html>
