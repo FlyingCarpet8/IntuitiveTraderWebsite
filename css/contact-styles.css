@@ -1,0 +1,418 @@
+    /* New Top Banner Styles */
+    .top-banner {
+        background-color: #ECC934; /* Gold background */
+        color: black; /* Text color */
+        text-align: center; /* Center the text */
+        padding: 5px 0; /* Add some padding */
+        font-family: 'Open Sans', sans-serif; /* Body text font */
+        font-size: 14px; /* Adjust font size */
+        position: fixed; /* Fix it at the top */
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1001; /* Ensure it's above the header */
+        text-transform: none; /* Ensure text is not in all caps */
+    }
+
+    .top-banner .bold-text {
+        font-weight: bold; /* Make this part bold */
+    }
+    body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url('../Images/bg2.jpg');
+        background-size: auto;
+        background-repeat: repeat;
+        background-color: #7DADC4; /* Fallback color */
+        font-family: 'Open Sans', sans-serif; /* Body text font */
+    }
+
+    .top-footer {
+        background-color: black;
+        padding: 10px 20px; /* Reduced padding */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 20px;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        height: 50px; /* Smaller height */
+        transition: top 0.4s; /* Smooth transition for hiding/showing */
+    }
+
+    /* Hide header on scroll down */
+    .top-footer.hide {
+        top: -110px; /* Move header out of view */
+    }
+
+    /* Fading Arch Effect */
+    .top-footer::after {
+        content: '';
+        position: absolute;
+        bottom: -100px; /* Extend below the footer */
+        left: 0;
+        right: 0;
+        height: 100px; /* Height of the arch */
+        background: radial-gradient(
+            ellipse 65% 90% at 50% 100%, /* Ellipse shape, wider at the top */
+            rgba(0, 0, 0, 0) 80%, /* Transparent at the center */
+            rgba(0, 0, 0, 1) 100% /* Solid black on the sides */
+        );
+        z-index: -1; /* Place it behind the footer content */
+    }
+
+    .social-links {
+	    margin-top: 18px;
+        display: flex;
+        gap: 55px; /* Space between icons */
+        margin-left: 140px;
+        align-items: center; /* Center icons vertically */
+    }
+
+    .social-links img {
+        height: 25px; /* Smaller icons */
+        width: auto; /* Maintain aspect ratio */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+    }
+
+    .social-links img:hover {
+        transform: scale(1.2); /* Slightly enlarge on hover */
+    }
+
+    .nav-links {
+	    margin-top: 18px;
+        display: flex;
+        gap: 50px;
+        margin-right: 20px;
+    }
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif; /* Heading font */
+        font-size: 16px; /* Smaller font size */
+    }
+    
+    .social-links-footer {
+        display: flex;
+        gap: 55px; /* Space between icons */
+        margin-left: 140px;
+        align-items: center; /* Center icons vertically */
+    }
+    
+    .social-links-footer img {
+        height: 25px; /* Smaller icons */
+        width: auto; /* Maintain aspect ratio */
+        transition: transform 0.3s ease; /* Smooth hover effect */
+    }
+    
+    .social-links-footer img:hover {
+        transform: scale(1.2); /* Slightly enlarge on hover */
+    }
+    
+    .nav-links-footer {
+        display: flex;
+        gap: 60px;
+        margin-right: 20px;
+    }
+    
+    .nav-links-footer a {
+        color: white;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif; /* Heading font */
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .logo {
+	    margin-top: 6px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 80px; /* Smaller size */
+        height: 50px; /* Smaller height */
+        z-index: 1;
+    }
+
+    main {
+        margin-top: 120px; /* Adjusted for smaller header */
+        padding: 20px;
+        position: relative;
+        flex: 1; /* Push footer to the bottom */
+    }
+
+    a:hover {
+        color: #ECC934;
+        transition: color 0.3s ease;
+    }
+
+    /* Container Styles */
+    .container {
+        max-width: 80%; /* 50% wider */
+        margin: 20px auto; /* Center the container */
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+        border: 2px solid #ECC934; /* Gold border */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    }
+
+    h1, h2, h3 {
+        font-family: 'Roboto', sans-serif; /* Heading font */
+    }
+
+	p {
+        font-family: 'Roboto', sans-serif; /* Body text font */
+        line-height: 1.6; /* Improve readability */
+        font-weight: 410;
+	}
+
+   	.indent-para {
+   	    margin-left: 80px;
+   	    margin-right: 80px;
+   	}
+   	
+   	.indent-para-large {
+       	text-align: center;
+       	font-size: 26px;
+       	margin: 30px 150px;
+   	}
+   	
+   	.contact-details {
+       	text-align: center;
+       	font-size: 20px;
+       	margin: 30px 150px;
+   	}
+   	
+   	.about-us-heading {
+       	margin-left: 140px;
+        margin-right: 140px;
+        text-align: center;
+        font-size: 17px;
+        margin-bottom: 30px;
+   	}
+   	
+   	.values-heading {
+        text-align: center;
+    	font-size: 28px;
+    	margin: 10px 150px 10px;
+   	}
+   	
+   	.indent-h1 {
+   	    font-family: "Monomakh";
+   	    margin-top: 0px;
+   	    margin-bottom: 0px;
+        font-size: 52px;
+   	    text-align: center;
+   	}
+   	
+   	.indent-h3 {
+       	margin-left: 25px;
+   	}
+
+	.indent-h {
+   	    margin-left: 40px;
+   	    margin-right: 80px;
+   	}
+   	
+	.centre-h {
+   	    text-align: center;
+   	}
+   	
+   	.img-underline {
+   	    display: block;       /* Ensures margins work correctly */
+        margin: 0 auto;       /* Centers horizontally */
+        margin-top: 10px;
+        margin-bottom: -10px;  /* Adds space below the image (adjust as needed) */
+    }
+
+    /* Footer Styles */
+    .bottom-footer {
+        background-color: black;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        height: 30px;
+        margin-top: auto; /* Push footer to the bottom */
+    }
+
+    /* Inverted Arch Effect */
+    .bottom-footer::before {
+        content: '';
+        position: absolute;
+        top: -100px; /* Extend above the footer */
+        left: 0;
+        right: 0;
+        height: 100px; /* Height of the arch */
+        background: radial-gradient(
+            ellipse 65% 90% at 50% 0%, /* Ellipse shape, wider at the bottom */
+            rgba(0, 0, 0, 0) 80%, /* Transparent at the center */
+            rgba(0, 0, 0, 1) 100% /* Solid black on the sides */
+        );
+        z-index: -1; /* Place it behind the footer content */
+    }
+    
+    .fixed-square {
+        position: fixed; /* Keeps the square fixed on the screen */
+    	font-weight: bold;
+        bottom: 90px;    /* Distance from the bottom of the viewport */
+        right: 45px;     /* Distance from the right of the viewport */
+        width: 200px;     /* Width of the square */
+        height: 75px;    /* Height of the square */
+        background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        z-index: 1000;   /* Ensures it stays on top of other content */
+        border: 4px solid #ECC934; /* Gold border */
+        border-radius: 10px; /* Rounded corners */
+        text-align: center;
+    }
+    
+   	.BAT-Nav {
+   	    margin-top: -6px;
+   	    padding: 6px;
+   	    border: 2px solid #b79200;
+   	    border-radius: 10px;
+   	    font-weight: bold;
+   	}
+    
+    .BAT-Fixed {
+        padding: 25px 22px;
+        color: black;
+        font-family: 'Roboto', sans-serif; /* Heading font */
+        font-size: 20px; /* Smaller font size */
+        text-decoration: none;
+        line-height: 3.6;
+        
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .grid-container-OT {
+        margin-top: 40px;
+        margin-left: 17%;
+    }
+    
+    .grid-container-OT-times {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    
+    }
+    
+    .contact-aims {
+        margin-top: 5%;
+    
+    }
+    
+    .op-times-title {
+        font-size: 20px;
+        text-decoration: underline;
+        margin-top: -0px;
+        margin-left: 50%;
+    }
+    
+    .op-times-day {
+        margin-top: -10px;
+        margin-left: 35%;
+    }
+    
+    .op-times-time {
+        margin-top: -10px;
+        margin-left: -20%;
+    }
+    
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+        border: 2px solid #ECC934; /* Gold border */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        margin-bottom: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+ 
+    .copyright {
+        color: white;
+        margin-left: 80px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .name-container {
+        margin-left: 10%;
+    }
+    
+    .email-container {
+        margin-left: -20%;
+    }
+    
+    .name-input {
+        width: 60%;
+        height: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px; 
+        border-radius: 10px;
+        border: 2px solid #ECC934;
+        margin-top: 10px;
+    }
+    
+    .email-input {
+        width: 92%;
+        height: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px; 
+        border-radius: 10px;
+        border: 2px solid #ECC934;
+        margin-top: 10px;
+        
+    }
+    
+    .message-input {
+        width: 100%;
+        height: 200px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px; 
+        border-radius: 10px;
+        border: 2px solid #ECC934;
+        margin-top: 10px;
+    }
+    
+    .email-paras {
+        color: black;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-decoration: underline;
+        
+    }
+    
+    .message-container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .send-box {
+        margin-left: 75%;
+        width: 15%;
+        height: 32px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 2px solid #ECC934;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        background-color: white;
+    }
+    
+    .send-box:hover {
+        color: #ECC934;
+        background-color: black;
+    }

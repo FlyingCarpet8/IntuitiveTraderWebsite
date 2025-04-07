@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta Data -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    
+    <!-- Load Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Monomakh&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="css/contact-styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="Images/icon.png">
+    
+    <!-- Title -->
+    <title>Contact</title>
+    
+</head>
+<body>
+
+    <!-- New Top Banner -->
+    <div class="top-banner">
+        While trading with Intuitive Trader, <span class="bold-text">your capital is at risk.</span> Some months you may lose more than you make.
+    </div>
+
+    <footer class="top-footer">
+        <div class="social-links">
+            <a href="#"><img src="Images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="Images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="Images/instagram.png" alt="Instagram"></a>
+        </div>
+        
+        <a href="index.html" class="logo"><img src="Images/ITLogo.png" alt="Logo" class="logo"></a>
+        
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="probabilities.html">Probabilities</a>
+            <a href="bat.html" class="BAT-Nav">Become A Trader</a>
+        </div>
+    </footer>
+
+    <main>
+        <!-- Contact Us Container -->
+        <div class="container">
+            <h1 class="indent-h1">Contact</h1>
+    	    <img src="Images/Underline2.png" class="img-underline" alt="Underline">
+    	    
+    	    
+    	    <div class="grid-container">
+        	    
+        	    
+        	    <div class="contact-aims">
+        	    <p class="contact-details">If you want to contact us, you can do so by emailing 
+        	    us or by filling in the form below. </p>
+        	    
+        	    <p class="contact-details">
+        	    We aim to get back to all of our customers 
+        	    within 5 working days.</p>
+        	    </div>
+        	    
+        	    <div class="operating-times">
+        	    
+            	    <div class="grid-container-OT">
+                	    <p>Email:
+                	    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eathan.dart@gmail.com&su=Your%20Subject&body=Your%20Message%20Here" 
+                        target="_blank">contact@intuitive-trader.com</a></p>
+                    </div>
+                    
+                    <div class="grid-container-OT-times">
+                	    <p class="op-times-title">Operating times:</p>
+                	    <p></p>
+                	    <p class="op-times-day"><u>Monday</u></p>
+                	    <p class="op-times-time">09:00 - 16:00</p>
+                	    <p class="op-times-day"><u>Tuesday</u></p>
+                	    <p class="op-times-time">09:00 - 16:00</p>
+                	    <p class="op-times-day"><u>Wednesday</u></p>
+                	    <p class="op-times-time">09:00 - 12:00</p>
+                	    <p class="op-times-day"><u>Thursday</u></p>
+                	    <p class="op-times-time">09:00 - 16:00</p>
+                	    <p class="op-times-day"><u>Friday</u></p>
+                	    <p class="op-times-time">09:00 - 12:00</p>
+            	    </div>
+        	    </div>
+    	    
+    	    </div>
+    	    
+    	    
+    	    <img src="Images/Underline2.png" class="img-underline" alt="Underline">
+    	    
+    	    
+    	    <p class="indent-para-large">If you wish to contact us about any queries or concerns, 
+        	   please fill out this form below</p>
+            <form action="php/send_email.php" method="POST">
+                <div class="grid-item">
+                    <div class="grid-container">
+                        
+                        <div class="name-container">
+                            <label class="email-paras" for="name">Name:</label><br>
+                            <input class="name-input" type="text" id="name" name="name" required><br><br>
+                        </div>   
+                        
+                        <div class="email-container">     
+                            <label class="email-paras" for="email">Email:</label><br>
+                            <input class="email-input" type="email" id="email" name="email" required><br><br>
+                        </div> 
+                    </div>
+                    
+                    <div class="message-container">
+                        <label class="email-paras" for="message">Message:</label><br>
+                        <textarea class="message-input" id="message" name="message" rows="5" required></textarea><br><br>
+                    </div>
+            
+                    <button class="send-box" type="submit">Send Message</button>
+                </div>
+            </form>
+            
+            <img src="Images/Underline2.png" class="img-underline" alt="Underline">
+            
+            <!--
+            <p class="indent-para-large">Have an enquiry or issue? Send us an email at 
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=eathan.dart@gmail.com&su=Your%20Subject&body=Your%20Message%20Here" 
+            target="_blank">contact@intuitive-trader.com</a></p>
+            -->
+
+            
+            
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bottom-footer">
+        <div class="social-links-footer">
+            <a href="#"><img src="Images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="Images/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="Images/instagram.png" alt="Instagram"></a>
+        </div>
+        
+        <p class="copyright">&copy; 2025 Intuitive Trader. All rights reserved.</p>
+        
+        <div class="nav-links-footer">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="tos.html">Terms of Service</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <script src="js/script-contact.js"></script>
+    
+</body>
+</html>
