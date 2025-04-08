@@ -320,7 +320,7 @@
     
     .slide {
         min-width: 100%; /* Ensure only one slide is visible at a time */
-        height: 100%;
+        /*height: 100%; */
         position: relative;
     }
     
