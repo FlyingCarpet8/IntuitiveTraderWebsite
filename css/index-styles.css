@@ -265,9 +265,7 @@
         height: 33px;
         margin-top: auto; /* Push footer to the bottom */
     }
-    
-    
-    
+
    	.BAT-Nav {
    	    margin-top: -6px;
    	    padding: 6px;
@@ -391,12 +389,14 @@
     
     .choose-us-grid-img-left {
         max-width: 300px;
+		margin-top: 5%;
         margin-left: 30%;
     	border-radius: 70px; /* Rounded corners */
     }
     
     .choose-us-grid-img-right {
         max-width: 300px;
+		margin-top: 5%;
         margin-left: 30%;
     	border-radius: 70px; /* Rounded corners */
     }
@@ -456,13 +456,14 @@
             flex-direction: column;
             height: 100px;
         }
-        
-        .logo {
-            left: 93%;
-        }
+
+		.nav-links {
+		    margin-top: 35px;
+	    }
         
         .social-links {
             order: 3;
+			margin-top: 12px;
             gap: 10vw;
             margin-left: 0vw;
         }
@@ -560,6 +561,7 @@
             margin-top: 0px;
             font-size: 14px;
         }
+		
         .container {
 			max-width: 90%; /* 50% wider */
 			margin: 20px auto; /* Center the container */
