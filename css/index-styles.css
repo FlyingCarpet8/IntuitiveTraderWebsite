@@ -482,7 +482,6 @@
 
 		.welcome {
 	        font-size: 106px;
-	    
 	    }
         
         .img-underline {
@@ -499,6 +498,15 @@
         	font-size: 16px;
         	margin: 20px 4vw 20px;
     	}
+
+		.centered-para {
+	       	margin-left: 4vw;
+	        margin-right: 4vw;
+	        margin-bottom: 40px;
+	        text-align: center;
+	   	}
+
+		
         
         .indent-para {
     	    margin-left: 10vw;
@@ -525,18 +533,19 @@
             font-size: 20px;
         }
 
-        
         .choose-us-grid-item{
             font-size: 13px;
         }
         
         .choose-us-grid-img-left {
             max-width: 150px;
+			margin: auto 0px;
             margin-left: 10%;
         }
         
         .choose-us-grid-img-right {
             max-width: 150px;
+			margin: auto 0px;
             margin-left: 10%;
         }
         
