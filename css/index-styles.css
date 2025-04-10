@@ -70,7 +70,7 @@
         bottom: -95px; /* Extend below the footer */
         left: 0;
         right: 0;
-        height: 110px; /* Height of the arch */
+        height: 100px; /* Height of the arch */
         background: radial-gradient(
             ellipse 65% 90% at 50% 100%, /* Ellipse shape, wider at the top */
             rgba(0, 0, 0, 0) 80%, /* Transparent at the center */
@@ -293,13 +293,13 @@
     /* Slideshow Styles */
     .slideshow-container {
         position: relative;
-        max-width: 100%;
-        margin: 20px auto;
-	    margin-top: 0px;
+        max-width: 90%;
+        margin: 0 auto; /* Simplified margin */
         overflow: hidden;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        height: 340px; /* Fixed height for the slideshow */
+        height: 24vw; /* Fixed height */
+        background: black;
     }
     
     .slides {
@@ -309,15 +309,20 @@
     }
     
     .slide {
-        min-width: 100%; /* Ensure only one slide is visible at a time */
+        min-width: 100%; /* One slide at a time */
         height: 100%;
+        display: flex; /* Add this */
+        justify-content: center; /* Horizontal center */
+        align-items: center; /* Vertical center */
         position: relative;
+        overflow: hidden; /* Prevent image overflow */
     }
     
     .slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Crop the image to fit the slide */
+        width: auto; /* Remove fixed width */
+        max-width: 100%;
+        max-height: 100%; /* Ensure image doesn't exceed slide height */
+        object-fit: contain; /* Show full image (no cropping) */
         border-radius: 10px;
     }
     
