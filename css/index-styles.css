@@ -67,10 +67,10 @@
     .top-footer::after {
         content: '';
         position: absolute;
-        bottom: -100px; /* Extend below the footer */
+        bottom: -95px; /* Extend below the footer */
         left: 0;
         right: 0;
-        height: 100px; /* Height of the arch */
+        height: 105px; /* Height of the arch */
         background: radial-gradient(
             ellipse 65% 90% at 50% 100%, /* Ellipse shape, wider at the top */
             rgba(0, 0, 0, 0) 80%, /* Transparent at the center */
