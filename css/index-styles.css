@@ -479,6 +479,11 @@
         .top-banner {
             font-size: 11px;
         }
+
+		.welcome {
+	        font-size: 106px;
+	    
+	    }
         
         .img-underline {
     	     max-width: 80%;
