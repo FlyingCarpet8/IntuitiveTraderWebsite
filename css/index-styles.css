@@ -148,7 +148,7 @@
         display: flex;
         align-items: center;
         transform: translateX(-50%);
-	    margin-top: 6px;
+		margin-top: 6px;
         max-width: 80px; /* Smaller size */
         height: 50px; /* Smaller height */
         z-index: 1;
@@ -458,16 +458,16 @@
         }
 
 		.logo {
-			margin-top: 5px;
+			margin-top: 11px;
 		}
 
 		.nav-links {
-		    margin-top: 85px;
+		    margin-top: 80px;
 	    }
         
         .social-links {
             order: 3;
-			margin-top: 12px;
+			margin-top: 10px;
             gap: 10vw;
             margin-left: 0vw;
         }
