@@ -497,10 +497,14 @@
     	}
     	
     	.grid-indent-para {
-    	    margin-left: 1vw;
-    	    margin-right: 1vw;
+    	    margin-left: 0vw;
+    	    margin-right: 0vw;
     	    font-size: 14px;
     	}
+
+		.grid-item {
+	        padding: 5px;
+	    }
         
         .choose-us-grid-itemTitle {
             margin-top: 10%;
