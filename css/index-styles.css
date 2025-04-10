@@ -454,11 +454,15 @@
     @media (max-width: 1040px) {
         .top-footer {
             flex-direction: column;
-            height: 100px;
+            height: 125px;
         }
 
+		.logo {
+			margin-top: 5px;
+		}
+
 		.nav-links {
-		    margin-top: 70px;
+		    margin-top: 85px;
 	    }
         
         .social-links {
@@ -469,11 +473,11 @@
         }
         
         .slideshow-container {
-            margin-top: 50px;
+            margin-top: 75px;
         }
         
         .top-banner {
-            font-size: 12px;
+            font-size: 11px;
         }
         
         .img-underline {
