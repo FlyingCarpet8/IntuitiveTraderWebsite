@@ -385,8 +385,9 @@
     }
     
     .send-box {
-        margin-right: -5%;
-        width: 180px;
+        margin-left: 75%;
+        width: 20%;
+	    min-width: 160px;
         height: 32px;
         font-family: 'Roboto', sans-serif;
         font-size: 16px;
