@@ -445,6 +445,11 @@
     	     max-width: 80%;
          }
 
+		.grid-container-OT {
+	        margin-top: 40px;
+	        margin-left: 1vw;
+	    }
+
 		.contact-details {
 	       	text-align: center;
 	       	font-size: 16px;
@@ -452,8 +457,8 @@
 	   	}
 		
 		.op-times-title {
-	        font-size: 16px;
-	        margin-left: 2vw;
+	        font-size: 15px;
+	        margin-left: 4vw;
 	    }
 	    
 	    .op-times-day {
