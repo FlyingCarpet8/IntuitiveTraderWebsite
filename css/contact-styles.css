@@ -307,7 +307,7 @@
         font-size: 20px;
         text-decoration: underline;
         margin-top: -0px;
-        margin-left: 50%;
+        margin-left: 12vw;
     }
     
     .op-times-day {
@@ -448,9 +448,22 @@
 
 		.contact-details {
 	       	text-align: center;
-	       	font-size: 20px;
+	       	font-size: 16px;
 	       	margin: 30px 1vw;
 	   	}
+		
+		.op-times-title {
+	        font-size: 18px;
+	        margin-left: 2vw;
+	    }
+	    
+	    .op-times-day {
+	        margin-left: 1vw;
+	    }
+	    
+	    .op-times-time {
+	        margin-left: -1vw;
+	    }
         
         .indent-h3 {
             margin-left: 2vw;
