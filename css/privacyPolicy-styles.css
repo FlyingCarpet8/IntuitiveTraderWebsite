@@ -256,8 +256,11 @@
 			margin-top: 11px;
 		}
 
-		.nav-links a {
+		.nav-links {
 		    margin-top: 80px;
+	    }
+
+		.nav-links a {
 			font-size: 14px;
 	    }
         
