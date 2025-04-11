@@ -446,6 +446,7 @@
          }
 
 		.grid-container-OT {
+			font-size: 16px;
 	        margin-top: 40px;
 	        margin-left: 1vw;
 	    }
@@ -457,8 +458,8 @@
 	   	}
 		
 		.op-times-title {
-	        font-size: 15px;
-	        margin-left: 4vw;
+	        font-size: 16px;
+	        margin-left: 6vw;
 	    }
 	    
 	    .op-times-day {
