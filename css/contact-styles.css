@@ -480,7 +480,13 @@
 			font-size: 14px;
 	        margin-left: -1vw;
 	    }
-        
+
+		.send-box {
+	        margin-left: 0%;
+	        width: 0%;
+		    text-align: center;
+	    }
+		
         .indent-h3 {
             margin-left: 2vw;
             font-size: 16px;
