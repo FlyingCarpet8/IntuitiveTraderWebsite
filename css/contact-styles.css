@@ -54,7 +54,7 @@
     .top-footer::after {
         content: '';
         position: absolute;
-        bottom: -100px; /* Extend below the footer */
+        bottom: -95px; /* Extend below the footer */
         left: 0;
         right: 0;
         height: 100px; /* Height of the arch */
