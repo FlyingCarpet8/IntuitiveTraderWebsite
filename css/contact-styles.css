@@ -482,10 +482,10 @@
 	    }
 
 		.send-box {
-			display: block;
-	        margin-left: 0%;
+			display: absolute;
+	        right: 5%;
 	        width: 0%;
-		    margin: -10px auto 10px;
+		    
 	    }
 		
         .indent-h3 {
