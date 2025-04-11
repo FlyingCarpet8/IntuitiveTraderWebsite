@@ -182,7 +182,7 @@
 	.h2-titles {
 		text-align: center;
        	font-size: 28px;
-       	margin: 30px 150px 50px;
+       	margin: 50px 10vw;
 	}
    	
    	.indent-para-large {
@@ -399,8 +399,13 @@
 		.values-heading {
 	        text-align: center;
 	    	font-size: 22px;
-	    	margin: 10px 2vw;
+	    	margin: 10px 1vw;
 	   	}
+
+		.h2-titles {
+	       	font-size: 22px;
+	       	margin: 50px 2vw;
+		}
     	
     	.grid-indent-para {
     	    margin-left: 0vw;
