@@ -306,7 +306,7 @@
         font-size: 20px;
         text-decoration: underline;
         margin-top: -0px;
-        text-align: center;
+        margin-left: 10vw;
     }
     
     .op-times-day {
@@ -460,7 +460,8 @@
 		
 		.op-times-title {
 	        font-size: 16px;
-	        margin-left: 6vw;
+	        margin-left: 0vw;
+			text-align: center;
 	    }
 	    
 	    .op-times-day {
