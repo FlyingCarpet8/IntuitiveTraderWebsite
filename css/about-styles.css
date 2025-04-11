@@ -203,7 +203,7 @@
    	.values-heading {
         text-align: center;
     	font-size: 28px;
-    	margin: 10px 150px 10px;
+    	margin: 10px 10vw;
    	}
    	
    	.indent-h1 {
@@ -395,6 +395,12 @@
     	    margin-right: 10vw;
     	    font-size: 14px;
     	}
+
+		.values-heading {
+	        text-align: center;
+	    	font-size: 22px;
+	    	margin: 10px 2vw;
+	   	}
     	
     	.grid-indent-para {
     	    margin-left: 0vw;
@@ -405,31 +411,6 @@
 		.grid-item {
 	        padding: 5px;
 	    }
-        
-        .choose-us-grid-itemTitle {
-            margin-top: 10%;
-            text-align: center;
-        }
-        
-        .choose-us-grid-item-title {
-            font-size: 20px;
-        }
-
-        .choose-us-grid-item{
-            font-size: 13px;
-        }
-        
-        .choose-us-grid-img-left {
-            max-width: 150px;
-			margin: auto 0px;
-            margin-left: 10%;
-        }
-        
-        .choose-us-grid-img-right {
-            max-width: 150px;
-			margin: auto 0px;
-            margin-left: 10%;
-        }
         
         .bottom-footer {
             flex-direction: column;
@@ -465,7 +446,7 @@
         .container {
 			max-width: 90%;
 			margin: 20px auto;
-			margin-top: 40px;
+			margin-top: 140px;
 			padding: 15px;
 	    }
         
