@@ -205,6 +205,11 @@
     	font-size: 28px;
     	margin: 10px 10vw;
    	}
+
+	.values-para {
+   	    margin-left: 80px;
+   	    margin-right: 80px;
+   	}
    	
    	.indent-h1 {
    	    font-family: "Monomakh";
@@ -393,6 +398,12 @@
         .indent-para {
     	    margin-left: 10vw;
     	    margin-right: 10vw;
+    	    font-size: 14px;
+    	}
+
+		.values-para {
+    	    margin-left: 1vw;
+    	    margin-right: 1vw;
     	    font-size: 14px;
     	}
 
