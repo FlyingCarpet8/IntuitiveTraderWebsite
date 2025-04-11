@@ -367,6 +367,7 @@
         border-radius: 10px;
         border: 2px solid #ECC934;
         margin-top: 10px;
+	    resize: none;
     }
     
     .email-paras {
@@ -384,7 +385,7 @@
     }
     
     .send-box {
-        margin-left: 60vw;
+        margin-right: 5%;
         width: 180px;
         height: 32px;
         font-family: 'Roboto', sans-serif;
