@@ -385,7 +385,8 @@
     }
     
     .send-box {
-        margin-left: 75%;
+	    position: absolute;
+        right: 5%;
         width: 20%;
 	    min-width: 160px;
         height: 32px;
@@ -482,8 +483,6 @@
 	    }
 
 		.send-box {
-			display: absolute;
-	        right: 5%;
 			margin-top: -10px;
 			margin-bottom: 10px;
 	    }
