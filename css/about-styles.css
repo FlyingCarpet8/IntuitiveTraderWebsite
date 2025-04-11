@@ -41,7 +41,7 @@
         left: 0;
         right: 0;
         z-index: 1000;
-        height: 50px; /* Smaller height */
+        height: 55px; /* Smaller height */
         transition: top 0.4s; /* Smooth transition for hiding/showing */
     }
 
