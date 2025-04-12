@@ -23,6 +23,9 @@
     
     <!-- Style Sheet -->
     <link rel="stylesheet" href="css/probabilities-styles.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
     <!-- Favicon -->
     <link rel="icon" href="Images/icon.png">
@@ -82,7 +85,7 @@
             <div class="container horizontal-container">
                 <h2>Daily Profits (Next 30 Days)</h2>
                 <div class="graph-placeholder">
-                    Graph Placeholder (Use Chart.js or D3.js)
+                    <canvas id="monthlyChart" width="400" height="400"></canvas>
                 </div>
             </div>
 
@@ -121,6 +124,7 @@
     
     <!-- Script -->
     <script src="js/script-probabilities.js"></script>
+    <script src="js/script-probabilities-chart.js"></script>
     
 </body>
 </html>
