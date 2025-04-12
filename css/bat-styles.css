@@ -175,6 +175,7 @@
 	}
 
    	.indent-para {
+		text-align: center;
    	    margin-left: 80px;
    	    margin-right: 80px;
    	}
@@ -182,7 +183,7 @@
    	.indent-para-large {
        	text-align: center;
        	font-size: 28px;
-       	margin: 30px -100px 50px;
+       	margin: 30px -100px 30px;
 		font-weight: 410;
    	}
 
