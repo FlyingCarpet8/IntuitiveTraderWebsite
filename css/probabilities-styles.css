@@ -164,6 +164,56 @@
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     }
 
+
+     /* Dashboard Layout */
+     .dashboard {
+         display: grid;
+         grid-template-columns: 300px 900px; /* Left column for square containers, right column for the graph */
+         gap: 20px; /* Space between containers */
+         max-width: 1200px; /* Match the max-width of other pages */
+         margin: 0 auto; /* Center the dashboard */
+         width: 100%; /* Ensure it takes up the full width */
+         margin-top: 20px;
+     }
+ 
+     /* Left Column (Stacked Square Containers) */
+     .left-column {
+         display: flex;
+         flex-direction: column;
+         gap: 20px; /* Space between square containers */
+     }
+
+     /* Square Containers */
+     .square-container {
+         height: 300px; /* Fixed height for square containers */
+     }
+ 
+     /* Large Horizontal Container */
+     .horizontal-container {
+         height: calc(300px * 2 + 20px); /* Total height of two squares + gap */
+     }
+ 
+     /* Placeholder Graph */
+     .graph-placeholder {
+         width: 100%;
+         height: 150px; 
+         background-color: #f0f0f0; 
+         border-radius: 10px;
+         margin-top: 10px; 
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         font-family: 'Roboto', sans-serif;
+         font-size: 20px;
+         color: #888;
+     }
+ 
+     /* Bottom Container */
+     .bottom-container {
+         grid-column: span 2; /* Span both columns */
+         margin-top: 20px; /* Space above the bottom container */
+     }
+
     h1, h2, h3 {
         font-family: 'Roboto', sans-serif; /* Heading font */
     }
