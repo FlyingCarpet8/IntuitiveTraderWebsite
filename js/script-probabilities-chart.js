@@ -17,7 +17,7 @@ const myChart = new Chart(ctx, {
         min: 0,
         max: 100,
         ticks: {
-          stepSize: 20
+          stepSize: 10
         }
       }
     }
