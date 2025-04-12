@@ -1,6 +1,6 @@
 const ctx = document.getElementById('monthlyChart').getContext('2d');
 const myChart = new Chart(ctx, {
-  type: 'bar', // or 'line', 'pie', etc.
+  type: 'bar',
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [{
@@ -19,8 +19,13 @@ const myChart = new Chart(ctx, {
         beginAtZero: true,
         ticks: {
           stepSize: 10,
-          callback: function(value) { return value; }
-        }
+          // Force all ticks to show (no skipping)
+          callback: function(value) {
+            if (value % 10 === 0) return value; // Only show multiples of 10
+          }
+        },
+        // Disable auto-range adjustment
+        grace: '0%' // Prevents padding above max data value
       }
     }
   }
