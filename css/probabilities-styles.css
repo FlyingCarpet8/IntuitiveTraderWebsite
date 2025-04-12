@@ -168,7 +168,7 @@
          display: grid;
          grid-template-columns: 300px 900px; /* Left column for square containers, right column for the graph */
          gap: 20px; /* Space between containers */
-         max-width: 10vw; /* Match the max-width of other pages */
+         max-width: 1vw; /* Match the max-width of other pages */
          margin: 0 auto; /* Center the dashboard */
          width: 100%; /* Ensure it takes up the full width */
          margin-top: 20px;
