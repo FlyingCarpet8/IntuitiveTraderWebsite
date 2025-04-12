@@ -1,5 +1,5 @@
-const ctx = document.getElementById('winChanceChart').getContext('2d');
-const myChart = new Chart(ctx, {
+const winChanceChartCtx = document.getElementById('winChanceChart').getContext('2d');
+const winChanceChart = new Chart(winChanceChartCtx, {
   type: 'bar',
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
