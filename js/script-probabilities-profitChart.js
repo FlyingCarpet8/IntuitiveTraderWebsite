@@ -4,7 +4,7 @@ const profitChart = new Chart(profitChartctx, {
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [{
-      label: 'Sample Data',
+      label: 'Profit in Pips',
       data: [12, 19, 3, 5, 2, 85],
       backgroundColor: 'rgba(75, 192, 192, 0.2)',
       borderColor: 'rgba(75, 192, 192, 1)',
