@@ -85,7 +85,13 @@
             <div class="container horizontal-container">
                 <h2>Daily Profits (Next 30 Days)</h2>
                 <div class="graph-placeholder">
-                    <canvas id="monthlyChart" width="800" height="140"></canvas>
+                    <canvas id="tradeChanceChart" width="800" height="140"></canvas>
+                </div>
+                <div class="graph-placeholder">
+                    <canvas id="winChanceChart" width="800" height="140"></canvas>
+                </div>
+                <div class="graph-placeholder">
+                    <canvas id="profitChart" width="800" height="140"></canvas>
                 </div>
             </div>
 
@@ -124,7 +130,9 @@
     
     <!-- Script -->
     <script src="js/script-probabilities.js"></script>
-    <script src="js/script-probabilities-chart.js"></script>
+    <script src="js/script-probabilities-winChanceChart.js"></script>
+    <script src="js/script-probabilities-tradeChanceChart.js"></script>
+    <script src="js/script-probabilities-profitChart.js"></script>
     
 </body>
 </html>
