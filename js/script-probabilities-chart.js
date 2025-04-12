@@ -19,13 +19,7 @@ const myChart = new Chart(ctx, {
         beginAtZero: true,
         ticks: {
           stepSize: 10,
-          // Force all ticks to show (no skipping)
-          callback: function(value) {
-            if (value % 10 === 0) return value; // Only show multiples of 10
-          }
         },
-        // Disable auto-range adjustment
-        grace: '0%' // Prevents padding above max data value
       }
     }
   }
