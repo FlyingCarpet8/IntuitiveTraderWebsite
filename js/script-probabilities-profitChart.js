@@ -14,13 +14,7 @@ const profitChart = new Chart(profitChartctx, {
   options: {
     scales: {
       y: {
-        min: 0,
-        max: 100,
-        beginAtZero: true,
-        ticks: {
-          stepSize: 20,
-          count: 6
-        }
+        beginAtZero: true
       }
     }
   }
