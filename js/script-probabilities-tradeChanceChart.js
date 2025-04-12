@@ -1,4 +1,4 @@
-const ctx = document.getElementById('monthlyChart').getContext('2d');
+const ctx = document.getElementById('tradeChanceChart').getContext('2d');
 const myChart = new Chart(ctx, {
   type: 'bar',
   data: {
