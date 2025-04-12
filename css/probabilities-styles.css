@@ -155,15 +155,13 @@
 
     /* Container Styles */
     .container {
-        max-width: 90%; /* 50% wider */
-        margin: 20px auto; /* Center the container */
-        padding: 30px;
         background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
         border: 2px solid #ECC934; /* Gold border */
         border-radius: 10px; /* Rounded corners */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        padding: 20px;
+        box-sizing: border-box; /* Include padding in the height calculation */
     }
-
 
      /* Dashboard Layout */
      .dashboard {
