@@ -14,7 +14,11 @@ const myChart = new Chart(ctx, {
   options: {
     scales: {
       y: {
-        beginAtZero: true
+        min: 0,
+        max: 0,
+        ticks: {
+          stepSize: 20
+        }
       }
     }
   }
