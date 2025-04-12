@@ -185,6 +185,15 @@
        	margin: 30px -100px 50px;
 		font-weight: 410;
    	}
+
+   	
+   	.indent-h1 {
+   	    font-family: "Monomakh";
+   	    margin-top: 0px;
+   	    margin-bottom: 0px;
+        font-size: 52px;
+   	    text-align: center;
+   	}
    	
    	.join-us-heading {
        	margin-left: 180px;
