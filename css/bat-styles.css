@@ -290,7 +290,8 @@
         font-size: 20px;
         text-decoration: none;
         font-weight: 410;
-        padding: 10% 15%;
+		min-width: 120px;
+        /*padding: 10% 15%;*/
     }
 
     .grid-container {
@@ -346,10 +347,6 @@
         .top-banner {
             font-size: 11px;
         }
-
-		.welcome {
-	        font-size: 106px;
-	    }
         
         .img-underline {
     	     max-width: 80%;
@@ -365,10 +362,14 @@
         }
         
         .indent-para-large {
-        	text-align: center;
-        	font-size: 16px;
-        	margin: 20px 4vw 20px;
+        	font-size: 22px;
+        	margin: 30px 2vw 30px;
     	}
+
+		.indent-para {
+	   	    margin-left: 3vw;
+	   	    margin-right: 3vw;
+	   	}
         
         .bottom-footer {
             flex-direction: column;
