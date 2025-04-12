@@ -1,5 +1,5 @@
-const ctx = document.getElementById('tradeChanceChart').getContext('2d');
-const myChart = new Chart(ctx, {
+const tradeChanceChartCtx = document.getElementById('tradeChanceChart').getContext('2d');
+const tradeChanceChart = new Chart(tradeChanceChartCtx, {
   type: 'bar',
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
