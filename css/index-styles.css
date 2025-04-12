@@ -553,6 +553,10 @@
 			margin: auto 0px;
             margin-left: 10%;
         }
+
+		.copy-trading-works {
+	        font-size: 42px;
+	    }
         
         .bottom-footer {
             flex-direction: column;
