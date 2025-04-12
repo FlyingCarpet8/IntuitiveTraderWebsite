@@ -191,7 +191,7 @@
     /* Placeholder Graph */
     .graph-placeholder {
         width: 100%;
-        height: calc(100% - 60px); /* Account for the heading and padding */
+        height: 100px; /* Account for the heading and padding */
         background-color: #f0f0f0; /* Light gray background */
         border-radius: 10px;
         margin-top: 20px; /* Space below the heading */
