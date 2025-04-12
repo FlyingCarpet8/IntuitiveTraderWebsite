@@ -488,7 +488,9 @@
         }
 
 		.welcome {
-	        font-size: 64px;
+	        font-size: 68px;
+			margin-top:20px;
+			margin-bottom: 20px;
 	    }
         
         .img-underline {
