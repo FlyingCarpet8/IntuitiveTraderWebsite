@@ -180,12 +180,12 @@
 
     /* Square Containers */
     .square-container {
-        height: 200px; /* Fixed height for square containers */
+        height: 300px; /* Fixed height for square containers */
     }
 
     /* Large Horizontal Container */
     .horizontal-container {
-        height: calc(200px * 2 + 20px); /* Total height of two squares + gap */
+        height: calc(300px * 2 + 20px); /* Total height of two squares + gap */
     }
 
     /* Placeholder Graph */
