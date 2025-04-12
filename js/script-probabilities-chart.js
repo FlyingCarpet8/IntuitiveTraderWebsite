@@ -16,8 +16,10 @@ const myChart = new Chart(ctx, {
       y: {
         min: 0,
         max: 100,
+        beginAtZero: true,
         ticks: {
-          stepSize: 10
+          stepSize: 10,
+          callback: function(value) { return value; }
         }
       }
     }
