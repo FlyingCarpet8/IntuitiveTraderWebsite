@@ -18,8 +18,8 @@ const myChart = new Chart(ctx, {
         max: 100,
         beginAtZero: true,
         ticks: {
-          stepSize: 10,
-          count: 11
+          stepSize: 20,
+          count: 6
         }
       }
     }
