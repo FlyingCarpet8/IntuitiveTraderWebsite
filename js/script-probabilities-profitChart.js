@@ -1,5 +1,5 @@
-const ctx = document.getElementById('profitChart').getContext('2d');
-const myChart = new Chart(ctx, {
+const profitChartctx = document.getElementById('profitChart').getContext('2d');
+const profitChart = new Chart(profitChartctx, {
   type: 'bar',
   data: {
     labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
