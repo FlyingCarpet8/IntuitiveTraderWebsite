@@ -282,6 +282,7 @@
         margin: auto;
         margin-bottom: 50px;
         text-align: center;
+		min-width: 200px;
     }
     
     .fp-markets-link {
@@ -290,8 +291,6 @@
         font-size: 20px;
         text-decoration: none;
         font-weight: 410;
-		min-width: 120px;
-        /*padding: 10% 15%;*/
     }
 
     .grid-container {
