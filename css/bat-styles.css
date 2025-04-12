@@ -228,9 +228,12 @@
    	    text-align: center;
    	}
    	
-   	.underline {
-   	    margin: 10px 33.7%;
-   	}
+   	.img-underline {
+   	    display: block;       
+        margin: 0 auto;      
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
 
     /* Footer Styles */
     .bottom-footer {
