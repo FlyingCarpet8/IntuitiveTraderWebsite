@@ -171,7 +171,7 @@
 	p {
         font-family: 'Roboto', sans-serif; /* Body text font */
         line-height: 1.6; /* Improve readability */
-        font-weight: 410;
+        
 	}
 
    	.indent-para {
@@ -183,6 +183,7 @@
        	text-align: center;
        	font-size: 28px;
        	margin: 30px -100px 50px;
+		font-weight: 410;
    	}
    	
    	.join-us-heading {
@@ -191,41 +192,6 @@
         text-align: center;
         font-size: 20px;
         margin-bottom: 30px;
-   	}
-   	
-   	.about-us-heading {
-       	margin-left: 140px;
-        margin-right: 140px;
-        text-align: center;
-        font-size: 17px;
-        margin-bottom: 30px;
-   	}
-   	
-   	.values-heading {
-        text-align: center;
-    	font-size: 28px;
-    	margin: 10px 150px 10px;
-   	}
-   	
-   	.indent-h1 {
-   	    font-family: "Monomakh";
-   	    margin-top: 0px;
-   	    margin-bottom: 0px;
-        font-size: 52px;
-   	    text-align: center;
-   	}
-   	
-   	.indent-h3 {
-       	margin-left: 25px;
-   	}
-
-	.indent-h {
-   	    margin-left: 40px;
-   	    margin-right: 80px;
-   	}
-   	
-	.centre-h {
-   	    text-align: center;
    	}
    	
    	.img-underline {
@@ -377,7 +343,11 @@
         .img-underline {
     	     max-width: 80%;
          }
-        
+
+		.indent-h1 {
+	        font-size: 44px;
+	   	}
+		
         .indent-h3 {
             margin-left: 2vw;
             font-size: 16px;
@@ -388,50 +358,6 @@
         	font-size: 16px;
         	margin: 20px 4vw 20px;
     	}
-
-		.centered-para {
-	       	margin-left: 4vw;
-	        margin-right: 4vw;
-	        margin-bottom: 40px;
-	        text-align: center;
-	   	}
-
-        .indent-para {
-    	    margin-left: 10vw;
-    	    margin-right: 10vw;
-    	    font-size: 14px;
-    	}
-
-		.values-para {
-    	    margin-left: 1vw;
-    	    margin-right: 1vw;
-    	    font-size: 14px;
-    	}
-
-		.values-heading {
-	        text-align: center;
-	    	font-size: 22px;
-	    	margin: 10px 1vw;
-	   	}
-
-		.partner-para {
-	       	margin-left: 1vw;
-	   	}
-
-		.h2-titles {
-	       	font-size: 22px;
-	       	margin: 30px 1vw;
-		}
-    	
-    	.grid-indent-para {
-    	    margin-left: 0vw;
-    	    margin-right: 0vw;
-    	    font-size: 14px;
-    	}
-
-		.grid-item {
-	        padding: 5px;
-	    }
         
         .bottom-footer {
             flex-direction: column;
